@@ -1,8 +1,14 @@
-// base
-@import "base/_base";
+// normalize.css
+@import "normalize.css";
 
 // vars
-@import "base/_vars";
+@import "base/_vars.scss";
+
+// global
+@import "base/_globals.scss";
 
 // mixins
-@import "base/_mixins";
+@import "base/_mixins.scss";
+
+// modules
+

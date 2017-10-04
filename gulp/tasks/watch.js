@@ -2,27 +2,25 @@ const gulp = require('gulp');
 const watch = require('gulp-watch');
 const browserSync = require('browser-sync').create();
 
-gulp.task('watch', () => {
+gulp.task('watch',function() {
     browserSync.init({
         server: {
-            baseDir: 'dist'
+            baseDir: "dist"
         }
     });
+watch("./src/**/*.pug",function() {
+    gulp.start("pugChanged");
+});
+watch("./src/**/*.scss",function() {
+    gulp.start('cssInject');
+})
 
-    watch('./src/**/*.pug', () => {
-        gulp.start('pugChanged');
-    })
-
-    watch('./src/**/*.scss', () => {
-        gulp.start('cssInject');
-    })
 });
 
-gulp.task('pugChanged', ['pugRender'], () => {
+gulp.task("pugChanged",["pugRender"],function() {
     browserSync.reload();
 });
-
-gulp.task('cssInject', ['styles'], () => {
-    gulp.src('./dist/styles.css')
+gulp.task("cssInject",["styles"], function() {
+    gulp.src("./dist/styles.css")
     .pipe(browserSync.stream());
-});
+})
