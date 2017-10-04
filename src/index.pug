@@ -26,12 +26,13 @@ html(lang="en")
                 .main-nav__menu-icon: .main-nav__menu-icon__middle
 
                 .main-menu
+                    .logo: img(src="./img/logo.png", alt="")
                     ul.main-menu__list
-                        li.main-menu__item: a(href="#") Курсы
-                        li.main-menu__item: a(href="#") Команда
-                        li.main-menu__item: a(href="#") Отзывы
-                        li.main-menu__item: a(href="#") Моделям
-                        li.main-menu__item: a(href="#") Проверить сертификат
+                        li.main-menu__item: a.main-menu__link(href="#") Курсы
+                        li.main-menu__item: a.main-menu__link(href="#") Команда
+                        li.main-menu__item: a.main-menu__link(href="#") Отзывы
+                        li.main-menu__item: a.main-menu__link(href="#") Моделям
+                        li.main-menu__item: a.main-menu__link(href="#") Проверить сертификат
                         //- li.main-menu__item: a(href="#")
             .site-header__container
                 h1.site-header__title Добро пожаловать<br> в Академию «OldBoy»
@@ -78,3 +79,5 @@ html(lang="en")
             .section__container
                 img.icon.icon__hat(src="./img/hat.png", alt="scissors")
                 h1.site-header__title Команда Академии
+
+script(src="app.js")

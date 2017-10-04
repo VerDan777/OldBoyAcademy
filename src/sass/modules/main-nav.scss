@@ -2,41 +2,99 @@
 
     &__menu-icon {
         // positioning
-        position: relative;
         position: absolute;
-        right: 15px;
+        right: 25px;
         top: 50px;
-        z-index: 5;
-        height: 3px;
-        width: 28px;
-        transform-origin: 0 50%;
-        background-color: #ffffff;
-        display: block;
+        z-index: 2;
+
+        // box model
+        height: 24px;
+        width: 24px;
+        // border: 1px solid red;
+
+        // visual
+        cursor: pointer;
 
         &::before {
             content: "";
-            // positining
-            position: absolute;
-            left: 0px;
-            top: 10px;
-            transform-origin: 0 50%;
-            display: block;
-            height: 3px;
-            width: 28px;
-            background-color: #ffffff;
-        }
-        &::after {
-            content: "";
+            
             // positioning
             position: absolute;
+            left: 0;
+            top: 0;
+            transform-origin: 0 50%;
+
             // box model
             display: block;
             height: 3px;
-            width: 28px;
-            background-color: #ffffff;
-            transform-origin: 0 50%;
-            top: 20px;
+            width: 24px;
+
+            // visual
+            background-color: white;
+            transition: transform 0.3s ease-out;
+        }
+
+        &__middle {
+            // positioning
+            position: absolute;
             left: 0;
+            top: 10px;
+
+            // box model
+            display: block;
+            height: 3px;
+            width: 24px;
+
+            // visual
+            background-color: white;
+            transition: transform 0.3s ease-out;
+        }
+        &::after {
+            content: "";
+            
+            // positioning
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transform-origin: 0 50%;
+
+            // box model
+            display: block;
+            height: 3px;
+            width: 24px;
+
+            // visual
+            background-color: white;
+            transition: transform 0.3s ease-out;
+        }
+
+        &--close-x {
+            z-index: 5;
+            display: block;
+            
+            &::before {
+                // positioning
+                transform: rotate(45deg) scaleX(1.178);
+
+                // visual
+                background-color: $gold;
+            }
+
+            .main-nav__menu-icon__middle {
+                // positioning
+                transform: scaleX(0);
+
+                // visual
+                opacity: 0;
+            }
+
+            &::after {
+                // positioning
+                transform: rotate(-45deg) scaleX(1.178);
+
+                // visual
+                background-color: $gold;
+            }
         }
     }
 }

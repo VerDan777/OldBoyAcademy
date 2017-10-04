@@ -29,3 +29,11 @@
     transform-origin: 0 50%;
     top: 20px;
     left: 0; }
+  .main-nav__menu-icon--close-x::before {
+    content: "";
+    transform: rotate(45deg) scaleX(1.178);
+    background-color: red; }
+  .main-nav__menu-icon--close-x::after {
+    content: "";
+    transform: rotate(-45deg) scaleX(1.178);
+    background-color: red; }
