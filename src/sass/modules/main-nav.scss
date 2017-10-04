@@ -1,0 +1,42 @@
+.main-nav {
+
+    &__menu-icon {
+        // positioning
+        position: relative;
+        position: absolute;
+        right: 15px;
+        top: 50px;
+        z-index: 5;
+        height: 3px;
+        width: 28px;
+        transform-origin: 0 50%;
+        background-color: #ffffff;
+        display: block;
+
+        &::before {
+            content: "";
+            // positining
+            position: absolute;
+            left: 0px;
+            top: 10px;
+            transform-origin: 0 50%;
+            display: block;
+            height: 3px;
+            width: 28px;
+            background-color: #ffffff;
+        }
+        &::after {
+            content: "";
+            // positioning
+            position: absolute;
+            // box model
+            display: block;
+            height: 3px;
+            width: 28px;
+            background-color: #ffffff;
+            transform-origin: 0 50%;
+            top: 20px;
+            left: 0;
+        }
+    }
+}

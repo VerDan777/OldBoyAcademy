@@ -1,0 +1,7 @@
+.main-menu {
+  display: none; }
+  .main-menu__list {
+    padding: 0;
+    list-style: none; }
+  .main-menu__item {
+    padding: 10px; }
