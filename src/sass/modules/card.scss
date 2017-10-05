@@ -3,10 +3,26 @@
     padding: 150px 0;
     padding-bottom: 0;
     z-index: 9999;
-    // background-image: url('./img/barber-s.png');
     animation-duration: 2s;
     animation-delay: 2s;
     animation-iteration-count: 1;
+
+    @include atTabletsLandscape {
+        // box model
+        margin: 0 5%;
+        width: 40%;
+    }
+
+
+    &__wrapper {
+        @include atTabletsLandscape {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 100px;
+        }
+    }
 
     &__content {
         // box model
@@ -63,6 +79,17 @@
         max-height: 100vh;
         // min-width: ;
         // max-width: 1080px;
+        @include atTabletsPortrait {
+            background-image: url('./img/barber-m.jpg');
+        }
+        
+        @include atTabletsLandscape {
+            background-image: url('./img/barber-l.png');
+        }
+        
+        @include atDesktop {
+            // background-image: url('./img/barber-desktop.png');
+        }
     
 
     }

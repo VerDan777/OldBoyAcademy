@@ -1,6 +1,15 @@
 .section {
+    // box model
     padding: 0 15px;
     background-color: #ffffff;
+
+    @include atTabletsPortrait {
+        // box model
+        padding: 0 30px;
+    }
+    @include atDesktop {
+        padding-left: 160px;
+    }
 
     &__title {
         text-align: center;

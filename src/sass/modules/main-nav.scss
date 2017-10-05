@@ -15,6 +15,11 @@
         // visual
         cursor: pointer;
 
+        @include atDesktop {
+            // box model
+            display: none;
+        }
+
         &::before {
             content: "";
             
