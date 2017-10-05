@@ -71,7 +71,7 @@
         &--close-x {
             z-index: 5;
             display: block;
-            
+            position: fixed;
             &::before {
                 // positioning
                 transform: rotate(45deg) scaleX(1.178);

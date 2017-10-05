@@ -2,8 +2,8 @@
 
     position: relative;
     background-color: rgba(37, 80, 136, 0.8);
-    height: 90vh;
-    max-height: 450px;
+    height: 100vh;
+    // max-height: 100vh;
     margin-bottom: 50px;
 
     &::after {
@@ -25,9 +25,13 @@
     }
 
     &__title {
+        // box model
         text-align: center;
+
+        //typography
         font-weight: 200;
-        font-size: 1.7rem;
+        font-size: 1.75rem;
+
         //visual
         color: white;
     }

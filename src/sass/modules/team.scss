@@ -3,7 +3,10 @@
     height: 40vh;
     max-height: 300px;
     position: relative;
-    margin-top: 1350px;
+    margin-top: 2300px;
+    @include atSmall {
+        margin-top: 2400px;
+    }
    
 
     &::after {

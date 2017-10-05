@@ -1,5 +1,5 @@
 .section {
-    padding: 0 30px;
+    padding: 0 15px;
     background-color: #ffffff;
 
     &__title {
@@ -7,12 +7,17 @@
         line-height: 2rem;
         font-family: $mainFont;
         color: black;
+
+        &--marginboth {
+            margin: 40px 0;
+        }
     }
     &__text {
         text-align: left;
         font-family: $copyFont;
     }
     &__container {
+        padding: 60px 0;
         text-align: center;
     }
 }

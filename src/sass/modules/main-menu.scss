@@ -19,7 +19,7 @@
     
     &--shown {
         // positioning
-        position: absolute;
+        position: fixed;
         left: 0;
 
         // box model
@@ -34,7 +34,11 @@
         // box model
         margin: 0;
         padding: 60px 30px;
-        
+
+        @include atSmall {
+            // box model
+            padding: 25px 30px;
+        }
         // visual
         list-style: none;
     }

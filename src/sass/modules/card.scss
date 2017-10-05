@@ -3,4 +3,67 @@
     padding: 150px 0;
     padding-bottom: 0;
     z-index: 9999;
+    // background-image: url('./img/barber-s.png');
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+
+    &__content {
+        // box model
+        text-align: center; 
+        border: 1px solid #c9c9c9;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        padding: 0 10px;
+    }
+
+    &__header {
+
+        // box model
+        padding-bottom: 15px;
+
+        // visual
+        border-bottom: 2px solid #be0725;
+    }
+
+    &__description {
+        // box model
+        margin-top: 25px;
+    }
+
+    &__title {
+        // box model
+
+        // typography
+        font-size: 2rem;
+
+        // visual
+        color: $titleRed;
+    }
+    
+    &__subtitle {
+        // box model
+        margin: 8px 0;
+
+        // typography
+
+        font-weight: bold;
+    }
+    
+    span {
+
+        // typography
+        font-weight: bold;
+    }
+    &__img {
+        background-image: url('./img/barber-m.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-origin: contain;
+        height: 350px;
+        max-height: 100vh;
+        // min-width: ;
+        // max-width: 1080px;
+    
+
+    }
 }
