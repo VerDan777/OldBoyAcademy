@@ -1,0 +1,26 @@
+// normalize.css
+@import "normalize.css";
+
+// vars
+@import "base/_vars.scss";
+
+// global
+@import "base/_globals.scss";
+
+// mixins
+@import "base/_mixins.scss";
+
+// modules
+
+@import "modules/site-header";
+@import "modules/contacts";
+@import "modules/logo";
+@import "modules/main-nav";
+@import "modules/main-menu";
+@import "modules/section";
+@import "modules/icon";
+@import "modules/courses";
+@import "modules/card";
+@import "modules/team";
+@import "modules/button";
+

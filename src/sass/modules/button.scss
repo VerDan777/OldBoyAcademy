@@ -1,0 +1,12 @@
+.button {
+    // box model
+    display: inline-block;
+    margin: 40px 0;
+    padding: 30px 80px;
+    background-color:#d6a354;
+    text-decoration: none;
+    font-family: $copyFont;
+    font-weight: bold;
+    color: white;
+
+}

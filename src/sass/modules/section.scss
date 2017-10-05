@@ -1,0 +1,18 @@
+.section {
+    padding: 0 30px;
+    background-color: #ffffff;
+
+    &__title {
+        text-align: center;
+        line-height: 2rem;
+        font-family: $mainFont;
+        color: black;
+    }
+    &__text {
+        text-align: left;
+        font-family: $copyFont;
+    }
+    &__container {
+        text-align: center;
+    }
+}

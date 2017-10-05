@@ -1,0 +1,27 @@
+.team {
+    background-color: rgba(70, 49, 18, 0.8);
+    height: 40vh;
+    max-height: 300px;
+    position: relative;
+    margin-top: 1350px;
+   
+
+    &::after {
+        content: "";
+        background-image: url('./img/team.jpg');
+        background-origin: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+
+        // positioning
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        // opacity: 0.8;
+
+        // box model
+        z-index: -1;
+    }
+}
