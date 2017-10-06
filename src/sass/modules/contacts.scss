@@ -1,3 +1,36 @@
 .contacts {
+    // box model
     display: none;
+    
+    &__item {
+        // box model
+        display: none;
+        &--phone {
+            // positioning
+            position: absolute;
+            right: 30px;
+            top: 30px;
+
+            // box model
+            display: block;
+
+            
+            a {
+                // visual
+                color: white;
+                text-decoration: none;
+                
+                //typography
+                font-size: 1.1rem;
+                letter-spacing: 0.1rem;
+
+            }
+        }
+    }
+
+    @include atDesktop {
+        // box model
+        display:block;
+    }
+
 }

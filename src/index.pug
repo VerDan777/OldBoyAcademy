@@ -16,104 +16,108 @@ html(lang="en")
         link(shref="https://fonts.googleapis.com/css?family=Lora|Open+Sans" rel="stylesheet")
         title OldBoy Academy
     body
-        header.site-header
-            .contacts
-                .contacts__item
-                    .contacts__content
-                        a(href="#").socials__icon.icon-instagram Instagram
-                        a(href="#").socials__icon.icon-facebook Facebook
-                        a(href="#").socials__icon.icon-vk  Vk
-                .contacts__item
-                    .contacts__content
-                        a(href="") +7999 876 54 32
-            
-            .logo: img(src="./img/logo.png", alt="logo")
-
-            nav.main-nav 
-                .main-nav__menu-icon: .main-nav__menu-icon__middle
-
-                .main-menu
-                    .logo: img(src="./img/logo.png", alt="")
-                    ul.main-menu__list
-                        li.main-menu__item: a.main-menu__link(href="#") Курсы
-                        li.main-menu__item: a.main-menu__link(href="#") Команда
-                        li.main-menu__item: a.main-menu__link(href="#") Отзывы
-                        li.main-menu__item: a.main-menu__link(href="#") Моделям
-                        li.main-menu__item: a.main-menu__link(href="#") Проверить сертификат
-                        //- li.main-menu__item: a(href="#")
-            .site-header__container
-                h1.site-header__title Добро пожаловать<br> в Академию «OldBoy»
-                img.icon.icon__scissors(src="./img/scissors.png", alt="scissors")
-
-        section.section.about
-            .section__container
-                .section__left
-                    .logo: img(src="./img/logo-gold.png", alt="logo-gold")
-                .section__right
-                    h2.section__title.section__title--marginboth Академия барберинга&nbsp;- место где рождаются настоящие мужские парикмахеры
-                    p.section__text  Развитие культуры барберинга вернули мужчинам ощущение и эмоции, которые испытвали джентельмены на старинных черно-белых фотографиях. Традиции лучших цирюлен прошлого века возвращаются, а истинные барберы активно возрождают культуру брадобрейства в аскетичной атмосфере исключительно мужской парикмахерской.
-                    p.section__text Академия барберинга - школа, где вы станете настоящим барбером, профессионалом своего дела и ведующим специалистом барбершопа. Хотите узнать, как из бородатого мужчины сделать джентельмена? Тогда записывайтесь на наши курсы.
-        
-        section.section.courses
-            .section__container
-                img.icon.icon__hat(src="./img/hat.png", alt="hat")
-                h1.site-header__title Наши курсы:
-            .card__wrapper
-                .card.animated.fadeIn
-                    .card__img
-                    .card__content
-                        .card__header
-                            h3.card__title Барбер с нуля
-                            p.card__subtitle  Будние дни
-                        .card__description
-                            p.section__text <span>Продолжительность:</span> от 2 до 5 месяцев
-                            p.section__text <span>Для кого:</span> для лиц, не имеющих никаких  навыков стрижек и парикмахерского искусства или специальной подготовки(на базовых курсах), но очень желащих ими обладать и стать барбером, обучение ориентировано на людей "с нуля".
-                            p.section__text <span>Формат:</span>обучение по заданной проограмме обучения или выбранной Вами(корректируется индивидуально под Ваши пожелания) в мини-группах по 4-6 человека или индивидуально 1 на 1 с мастером-преподавателем в любое удобное для Вас время
-
-                        a(href="#").button Подробнее о курсе
+        .content
+            header.site-header
+                .contacts
+                    .contacts__item
+                        .contacts__content
+                            a(href="#").socials__icon.icon-instagram Instagram
+                            a(href="#").socials__icon.icon-facebook Facebook
+                            a(href="#").socials__icon.icon-vk  Vk
+                    .contacts__item.contacts__item--phone
+                        .contacts__content
+                            a(href="") +7 999 876 54 32
                 
-                .card.animated.fadeIn
-                    .card__img
-                    .card__content
-                        .card__header
-                            h3.card__title Барбер с нуля
-                            p.card__subtitle  Будние дни
-                        .card__description
-                            p.section__text <span>Продолжительность:</span> от 2 до 5 месяцев
-                            p.section__text <span>Для кого:</span> для лиц, не имеющих никаких  навыков стрижек и парикмахерского искусства или специальной подготовки(на базовых курсах), но очень желащих ими обладать и стать барбером, обучение ориентировано на людей "с нуля".
-                            p.section__text <span>Формат:</span>обучение по заданной проограмме обучения или выбранной Вами(корректируется индивидуально под Ваши пожелания) в мини-группах по 4-6 человека или индивидуально 1 на 1 с мастером-преподавателем в любое удобное для Вас время
+                .logo: img(src="./img/logo.png", alt="logo")
 
-                        a(href="#").button Подробнее о курсе
-                .card.animated.fadeIn
-                    .card__img
-                    .card__content
-                        .card__header
-                            h3.card__title Барбер с нуля
-                            p.card__subtitle  Будние дни
-                        .card__description
-                            p.section__text <span>Продолжительность:</span> от 2 до 5 месяцев
-                            p.section__text <span>Для кого:</span> для лиц, не имеющих никаких  навыков стрижек и парикмахерского искусства или специальной подготовки(на базовых курсах), но очень желащих ими обладать и стать барбером, обучение ориентировано на людей "с нуля".
-                            p.section__text <span>Формат:</span>обучение по заданной проограмме обучения или выбранной Вами(корректируется индивидуально под Ваши пожелания) в мини-группах по 4-6 человека или индивидуально 1 на 1 с мастером-преподавателем в любое удобное для Вас время
+                nav.main-nav 
+                    .main-nav__menu-icon: .main-nav__menu-icon__middle
 
-                        a(href="#").button Подробнее о курсе
-                .card.animated.fadeIn
-                    .card__img
-                    .card__content
-                        .card__header
-                            h3.card__title Барбер с нуля
-                            p.card__subtitle  Будние дни
-                        .card__description
-                            p.section__text <span>Продолжительность:</span> от 2 до 5 месяцев
-                            p.section__text <span>Для кого:</span> для лиц, не имеющих никаких  навыков стрижек и парикмахерского искусства или специальной подготовки(на базовых курсах), но очень желащих ими обладать и стать барбером, обучение ориентировано на людей "с нуля".
-                            p.section__text <span>Формат:</span>обучение по заданной проограмме обучения или выбранной Вами(корректируется индивидуально под Ваши пожелания) в мини-группах по 4-6 человека или индивидуально 1 на 1 с мастером-преподавателем в любое удобное для Вас время
+                    .main-menu
+                        .logo--menu: img(src="./img/logo.png", alt="")
+                        ul.main-menu__list
+                            li.main-menu__item: a.main-menu__link(href="#") Курсы
+                            li.main-menu__item: a.main-menu__link(href="#") Команда
+                            li.main-menu__item: a.main-menu__link(href="#") Отзывы
+                            li.main-menu__item: a.main-menu__link(href="#") Моделям
+                            li.main-menu__item: a.main-menu__link(href="#") Проверить сертификат
+                            //- li.main-menu__item: a(href="#")
+                .site-header__container
+                    h1.site-header__title Добро пожаловать<br> в Академию «OldBoy»
+                    img.icon.icon__scissors(src="./img/scissors.png", alt="scissors")
 
-                        a(href="#").button Подробнее о курсе
-        
-        section.section.team
-            .section__container
-                img.icon.icon__hat(src="./img/hat.png", alt="scissors")
-                h1.site-header__title Команда Академии
-        
+            section.section.about
+                .section__container
+                    .section__left
+                        .logo--gold
+                        picture
+                            source(srcset="./img/hero-tablet.png 700w" media="(min-width: 1200px)")
+                            img(src="./img/logo-gold.png" srcset="./img/logo-gold-desktop.png 1200w" alt="logo-gold")
+                    .section__right
+                        h2.section__title.section__title--marginboth Академия барберинга&nbsp;- место,<br>где рождаются настоящие<br>мужские парикмахеры
+                        p.section__text  Развитие культуры барберинга вернули мужчинам ощущение и эмоции, которые испытвали джентельмены на старинных черно-белых фотографиях. Традиции лучших цирюлен прошлого века возвращаются, а истинные барберы активно возрождают культуру брадобрейства в аскетичной атмосфере исключительно мужской парикмахерской.
+                        p.section__text Академия барберинга - школа, где вы станете настоящим барбером, профессионалом своего дела и ведующим специалистом барбершопа. Хотите узнать, как из бородатого мужчины сделать джентельмена? Тогда записывайтесь на наши курсы.
+            
+            section.section.courses
+                .section__container
+                    img.icon.icon__hat(src="./img/hat.png", alt="hat")
+                    h1.site-header__title Наши курсы:
+                .card__wrapper
+                    .card.animated.fadeIn
+                        .card__img
+                        .card__content
+                            .card__header
+                                h3.card__title Барбер с нуля
+                                p.card__subtitle  Будние дни
+                            .card__description
+                                p.section__text <span>Продолжительность:</span> от 2 до 5 месяцев
+                                p.section__text <span>Для кого:</span> для лиц, не имеющих никаких  навыков стрижек и парикмахерского искусства или специальной подготовки(на базовых курсах), но очень желащих ими обладать и стать барбером, обучение ориентировано на людей "с нуля".
+                                p.section__text <span>Формат:</span>обучение по заданной проограмме обучения или выбранной Вами(корректируется индивидуально под Ваши пожелания) в мини-группах по 4-6 человека или индивидуально 1 на 1 с мастером-преподавателем в любое удобное для Вас время
+
+                            a(href="#").button Подробнее о курсе
+                    
+                    .card.animated.fadeIn
+                        .card__img
+                        .card__content
+                            .card__header
+                                h3.card__title Барбер с нуля
+                                p.card__subtitle  Будние дни
+                            .card__description
+                                p.section__text <span>Продолжительность:</span> от 2 до 5 месяцев
+                                p.section__text <span>Для кого:</span> для лиц, не имеющих никаких  навыков стрижек и парикмахерского искусства или специальной подготовки(на базовых курсах), но очень желащих ими обладать и стать барбером, обучение ориентировано на людей "с нуля".
+                                p.section__text <span>Формат:</span>обучение по заданной проограмме обучения или выбранной Вами(корректируется индивидуально под Ваши пожелания) в мини-группах по 4-6 человека или индивидуально 1 на 1 с мастером-преподавателем в любое удобное для Вас время
+
+                            a(href="#").button Подробнее о курсе
+                    .card.animated.fadeIn
+                        .card__img
+                        .card__content
+                            .card__header
+                                h3.card__title Барбер с нуля
+                                p.card__subtitle  Будние дни
+                            .card__description
+                                p.section__text <span>Продолжительность:</span> от 2 до 5 месяцев
+                                p.section__text <span>Для кого:</span> для лиц, не имеющих никаких  навыков стрижек и парикмахерского искусства или специальной подготовки(на базовых курсах), но очень желащих ими обладать и стать барбером, обучение ориентировано на людей "с нуля".
+                                p.section__text <span>Формат:</span>обучение по заданной проограмме обучения или выбранной Вами(корректируется индивидуально под Ваши пожелания) в мини-группах по 4-6 человека или индивидуально 1 на 1 с мастером-преподавателем в любое удобное для Вас время
+
+                            a(href="#").button Подробнее о курсе
+                    .card.animated.fadeIn
+                        .card__img
+                        .card__content
+                            .card__header
+                                h3.card__title Барбер с нуля
+                                p.card__subtitle  Будние дни
+                            .card__description
+                                p.section__text <span>Продолжительность:</span> от 2 до 5 месяцев
+                                p.section__text <span>Для кого:</span> для лиц, не имеющих никаких  навыков стрижек и парикмахерского искусства или специальной подготовки(на базовых курсах), но очень желащих ими обладать и стать барбером, обучение ориентировано на людей "с нуля".
+                                p.section__text <span>Формат:</span>обучение по заданной проограмме обучения или выбранной Вами(корректируется индивидуально под Ваши пожелания) в мини-группах по 4-6 человека или индивидуально 1 на 1 с мастером-преподавателем в любое удобное для Вас время
+
+                            a(href="#").button Подробнее о курсе
+            
+            section.section.team
+                .section__container
+                    img.icon.icon__hat(src="./img/hat.png", alt="scissors")
+                    h1.site-header__title Команда Академии
+            
         
 
 script(src="app.js")

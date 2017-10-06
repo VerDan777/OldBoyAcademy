@@ -7,9 +7,11 @@
     @include atSmall {
         margin-top: 4850px;
     }
+
     @include atTabletsPortrait {
         margin-top: 4000px;
     }
+    
     @include atTabletsLandscape {
         margin-top: 2300px;
     }

@@ -3,5 +3,19 @@
     padding-top: 30px;
     text-align: center;
 
+    &--menu {
+        // box model
+        display: block;
+        padding-top: 30px;
+        text-align: center;
+    }
 
+    &--gold {
+        // box model
+        display: block;
+    }
+    @include atDesktop {
+        // box model
+        display: none;
+    }
 }

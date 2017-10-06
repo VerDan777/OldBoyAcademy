@@ -1,0 +1,7 @@
+.content {
+
+    @include atDesktop {
+        // box model
+        margin-left: 160px;
+    }
+}

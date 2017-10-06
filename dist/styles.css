@@ -406,10 +406,17 @@ h1, h2, h3, h4, h5, h6 {
   margin: 16px 0;
   font-family: "Lora", sans-serif; }
 
+@media (min-width: 1200px) {
+  .content {
+    margin-left: 160px; } }
+
 .site-header {
   position: relative;
   background-color: rgba(37, 80, 136, 0.8);
   margin-bottom: 50px; }
+  @media (min-width: 1200px) {
+    .site-header {
+      height: 950px; } }
   .site-header::after {
     content: "";
     background-image: url("./img/bg-l.jpg");
@@ -430,16 +437,48 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 200;
     font-size: 1.75rem;
     color: white; }
+    @media (min-width: 1200px) {
+      .site-header__title {
+        font-size: 3.5rem;
+        font-weight: 100; } }
   .site-header__container {
     text-align: center;
     padding: 80px 0; }
+    @media (min-width: 1200px) {
+      .site-header__container {
+        margin: 0 auto;
+        padding: 35% 0; } }
 
 .contacts {
   display: none; }
+  .contacts__item {
+    display: none; }
+    .contacts__item--phone {
+      position: absolute;
+      right: 30px;
+      top: 30px;
+      display: block; }
+      .contacts__item--phone a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.1rem;
+        letter-spacing: 0.1rem; }
+  @media (min-width: 1200px) {
+    .contacts {
+      display: block; } }
 
 .logo {
   padding-top: 30px;
   text-align: center; }
+  .logo--menu {
+    display: block;
+    padding-top: 30px;
+    text-align: center; }
+  .logo--gold {
+    display: block; }
+  @media (min-width: 1200px) {
+    .logo {
+      display: none; } }
 
 .main-nav__menu-icon {
   position: absolute;
@@ -557,16 +596,23 @@ h1, h2, h3, h4, h5, h6 {
   @media (min-width: 699px) {
     .section {
       padding: 0 30px; } }
-  @media (min-width: 1200px) {
-    .section {
-      padding-left: 160px; } }
+  .section__left {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top; }
+  .section__right {
+    width: 48%;
+    display: inline-block; }
   .section__title {
     text-align: center;
     line-height: 2rem;
     font-family: "Lora", sans-serif;
     color: black; }
     .section__title--marginboth {
-      margin: 40px 0; }
+      margin: 40px 0;
+      text-align: left;
+      font-size: 2rem;
+      line-height: 3rem; }
   .section__text {
     text-align: left;
     font-family: "Open Sans", sans-serif; }
@@ -578,6 +624,9 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center; }
   .icon__scissors {
     padding: 100px 0; }
+    @media (min-width: 1200px) {
+      .icon__scissors {
+        padding: 50px 0; } }
 
 .courses {
   background-color: rgba(96, 16, 29, 0.8);

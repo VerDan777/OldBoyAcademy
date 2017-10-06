@@ -7,8 +7,21 @@
         // box model
         padding: 0 30px;
     }
-    @include atDesktop {
-        padding-left: 160px;
+
+    &__left {
+        // box model
+        width: 50%;
+        display: inline-block;
+        // padding: 100px 0;
+        // float: right;
+        vertical-align: top;
+    }
+
+    &__right {
+        // box model
+        width: 48%;
+        display: inline-block;
+        
     }
 
     &__title {
@@ -19,6 +32,9 @@
 
         &--marginboth {
             margin: 40px 0;
+            text-align: left;
+            font-size: 2rem;
+            line-height: 3rem;
         }
     }
     &__text {
