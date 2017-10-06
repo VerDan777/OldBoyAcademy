@@ -13,6 +13,7 @@
     &--gold {
         // box model
         display: block;
+        text-align: center;
     }
     @include atDesktop {
         // box model

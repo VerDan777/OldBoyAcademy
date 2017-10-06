@@ -15,12 +15,35 @@
         // padding: 100px 0;
         // float: right;
         vertical-align: top;
+
+        @include atSmall {
+            width: 100%;
+        }
+        
+        @include atTabletsPortrait {
+            // box model
+            width: 100%;
+            display: block;
+        }
+        @include atDesktop {
+            width: 50%;
+            display: inline-block;
+        }
     }
 
     &__right {
         // box model
-        width: 48%;
-        display: inline-block;
+
+        @include atTabletsPortrait {
+            // box model
+            width: 100%;
+            display: block;
+        }
+
+        @include atDesktop {
+            width: 48%;
+            display: inline-block;
+        }
         
     }
 
@@ -32,17 +55,46 @@
 
         &--marginboth {
             margin: 40px 0;
-            text-align: left;
+            text-align: center;
             font-size: 2rem;
             line-height: 3rem;
+
+            @include atSmall {
+                // box model
+                text-align: center;
+                font-size: 1.1rem;
+                line-height: 1rem;
+            }
+
+            @include atDesktop {
+                // box model
+                text-align: left;
+            }
         }
     }
     &__text {
         text-align: left;
         font-family: $copyFont;
+        color: #444444;
+
+        @include atTabletsPortrait {
+            text-align: center;
+        }
+        @include atDesktop {
+            text-align: left;
+        }
+
+        // &::before {
+        //     content:url("./img/calendar.png");
+        // }
     }
     &__container {
         padding: 60px 0;
         text-align: center;
+        &--section {
+            @include atDesktop {
+                padding: 10px 0;
+            }
+        }
     }
 }

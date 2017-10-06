@@ -3,17 +3,21 @@
     height: 40vh;
     max-height: 300px;
     position: relative;
-    margin-top: 4650px;
+    margin-top: 7150px;
     @include atSmall {
-        margin-top: 4850px;
+        margin-top: 7250px;
     }
 
     @include atTabletsPortrait {
-        margin-top: 4000px;
+        margin-top: 6800px;
     }
-    
+
     @include atTabletsLandscape {
-        margin-top: 2300px;
+        margin-top: 3500px;
+    }
+
+    @include atDesktop {
+        margin-top: 2200px;
     }
    
 
@@ -37,6 +41,8 @@
 
         @include atDesktop {
             background-image: url('./img/team-desktop.png');
+            
+ 
         }
     }
 }

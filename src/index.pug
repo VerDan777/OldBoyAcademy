@@ -50,68 +50,131 @@ html(lang="en")
                 .section__container
                     .section__left
                         .logo--gold
-                        picture
-                            source(srcset="./img/hero-tablet.png 700w" media="(min-width: 1200px)")
-                            img(src="./img/logo-gold.png" srcset="./img/logo-gold-desktop.png 1200w" alt="logo-gold")
+                            //- source(srcset="./img/logo-gold-desktop.png 1200w" media="(min-width: 1200px)")
+                            //- source(srset="./img/logo-gold-tablet.png 900w" media="(min-width: 900px)")
+                            img(src="./img/logo-gold.png" alt="logo-gold")
                     .section__right
                         h2.section__title.section__title--marginboth Академия барберинга&nbsp;- место,<br>где рождаются настоящие<br>мужские парикмахеры
                         p.section__text  Развитие культуры барберинга вернули мужчинам ощущение и эмоции, которые испытвали джентельмены на старинных черно-белых фотографиях. Традиции лучших цирюлен прошлого века возвращаются, а истинные барберы активно возрождают культуру брадобрейства в аскетичной атмосфере исключительно мужской парикмахерской.
                         p.section__text Академия барберинга - школа, где вы станете настоящим барбером, профессионалом своего дела и ведующим специалистом барбершопа. Хотите узнать, как из бородатого мужчины сделать джентельмена? Тогда записывайтесь на наши курсы.
             
             section.section.courses
-                .section__container
+                .section__container.section__container--section
                     img.icon.icon__hat(src="./img/hat.png", alt="hat")
                     h1.site-header__title Наши курсы:
                 .card__wrapper
                     .card.animated.fadeIn
-                        .card__img
-                        .card__content
-                            .card__header
-                                h3.card__title Барбер с нуля
-                                p.card__subtitle  Будние дни
-                            .card__description
-                                p.section__text <span>Продолжительность:</span> от 2 до 5 месяцев
-                                p.section__text <span>Для кого:</span> для лиц, не имеющих никаких  навыков стрижек и парикмахерского искусства или специальной подготовки(на базовых курсах), но очень желащих ими обладать и стать барбером, обучение ориентировано на людей "с нуля".
-                                p.section__text <span>Формат:</span>обучение по заданной проограмме обучения или выбранной Вами(корректируется индивидуально под Ваши пожелания) в мини-группах по 4-6 человека или индивидуально 1 на 1 с мастером-преподавателем в любое удобное для Вас время
+                        .card__outer
+                            .card__content
+                                .card__img
+                                ul.card__list
+                                    li: .card__header
+                                            h3.card__title Барбер с нуля
+                                            p.card__subtitle  Будние дни
+                                    .card__description
+                                        img(src="./img/calendar.png", alt="")
+                                        .card__group
+                                            p.section__text <span>Длительность:</span></br> от 2 до 5 месяцев
+                                            p.section__text <span>Уровень навыка:</span><br> Без опыта
+                                        p.section__text <span>Формат:</span><br> обучение в группе(4-6 человек)
+                                        p.section__text Персональные занятия(индивидуальная  программа)
 
-                            a(href="#").button Подробнее о курсе
+                                    a(href="#").button Подробнее о курсе
                     
-                    .card.animated.fadeIn
-                        .card__img
-                        .card__content
-                            .card__header
-                                h3.card__title Барбер с нуля
-                                p.card__subtitle  Будние дни
-                            .card__description
-                                p.section__text <span>Продолжительность:</span> от 2 до 5 месяцев
-                                p.section__text <span>Для кого:</span> для лиц, не имеющих никаких  навыков стрижек и парикмахерского искусства или специальной подготовки(на базовых курсах), но очень желащих ими обладать и стать барбером, обучение ориентировано на людей "с нуля".
-                                p.section__text <span>Формат:</span>обучение по заданной проограмме обучения или выбранной Вами(корректируется индивидуально под Ваши пожелания) в мини-группах по 4-6 человека или индивидуально 1 на 1 с мастером-преподавателем в любое удобное для Вас время
+                    .card.card--new.animated.fadeIn
+                        img.card__triangle(src="./img/triangle.png" alt="triangle")
+                        .card__outer
+                            .card__content
+                                .card__img
+                                ul.card__list
+                                    li: .card__header
+                                            h3.card__title Барбер с нуля
+                                            p.card__subtitle  Будние дни
+                                    .card__description
+                                        img(src="./img/calendar.png", alt="")
+                                        .card__group
+                                            p.section__text <span>Длительность:</span></br> от 2 до 5 месяцев
+                                            p.section__text <span>Уровень навыка:</span></br> Без опыта
+                                        p.section__text <span>Формат:</span></br> обучение в группе(4-6 человек)
+                                        p.section__text Персональные занятия(индивидуальная  программа)
 
-                            a(href="#").button Подробнее о курсе
-                    .card.animated.fadeIn
-                        .card__img
-                        .card__content
-                            .card__header
-                                h3.card__title Барбер с нуля
-                                p.card__subtitle  Будние дни
-                            .card__description
-                                p.section__text <span>Продолжительность:</span> от 2 до 5 месяцев
-                                p.section__text <span>Для кого:</span> для лиц, не имеющих никаких  навыков стрижек и парикмахерского искусства или специальной подготовки(на базовых курсах), но очень желащих ими обладать и стать барбером, обучение ориентировано на людей "с нуля".
-                                p.section__text <span>Формат:</span>обучение по заданной проограмме обучения или выбранной Вами(корректируется индивидуально под Ваши пожелания) в мини-группах по 4-6 человека или индивидуально 1 на 1 с мастером-преподавателем в любое удобное для Вас время
+                                    a(href="#").button Подробнее о курсе
 
-                            a(href="#").button Подробнее о курсе
-                    .card.animated.fadeIn
-                        .card__img
-                        .card__content
-                            .card__header
-                                h3.card__title Барбер с нуля
-                                p.card__subtitle  Будние дни
-                            .card__description
-                                p.section__text <span>Продолжительность:</span> от 2 до 5 месяцев
-                                p.section__text <span>Для кого:</span> для лиц, не имеющих никаких  навыков стрижек и парикмахерского искусства или специальной подготовки(на базовых курсах), но очень желащих ими обладать и стать барбером, обучение ориентировано на людей "с нуля".
-                                p.section__text <span>Формат:</span>обучение по заданной проограмме обучения или выбранной Вами(корректируется индивидуально под Ваши пожелания) в мини-группах по 4-6 человека или индивидуально 1 на 1 с мастером-преподавателем в любое удобное для Вас время
+                    .card.card--new.animated.fadeIn
+                        img.card__triangle(src="./img/triangle.png" alt="triangle")
+                        .card__outer
+                            .card__content
+                                .card__img
+                                ul.card__list
+                                    li: .card__header
+                                            h3.card__title Барбер с нуля
+                                            p.card__subtitle  Будние дни
+                                    .card__description
+                                        img(src="./img/calendar.png", alt="")
+                                        .card__group
+                                            p.section__text <span>Длительность:</span></br> от 2 до 5 месяцев
+                                            p.section__text <span>Уровень навыка:</span></br> Без опыта
+                                        p.section__text <span>Формат:</span></br> обучение в группе(4-6 человек)
+                                        p.section__text Персональные занятия(индивидуальная  программа)
 
-                            a(href="#").button Подробнее о курсе
+                                    a(href="#").button Подробнее о курсе
+
+                    .card.card--new.animated.fadeIn
+                        img.card__triangle(src="./img/triangle.png" alt="triangle")
+                        .card__outer
+                            .card__content
+                                .card__img
+                                ul.card__list
+                                    li: .card__header
+                                            h3.card__title Барбер с нуля
+                                            p.card__subtitle  Будние дни
+                                    .card__description
+                                        img(src="./img/calendar.png", alt="")
+                                        .card__group
+                                            p.section__text <span>Длительность:</span></br> от 2 до 5 месяцев
+                                            p.section__text <span>Уровень навыка:</span></br> Без опыта
+                                        p.section__text <span>Формат:</span> обучение в группе(4-6 человек)
+                                        p.section__text Персональные занятия(индивидуальная  программа)
+
+                                    a(href="#").button Подробнее о курсе
+
+                    .card.card--new.animated.fadeIn
+                        img.card__triangle(src="./img/triangle.png" alt="triangle")
+                        .card__outer
+                            .card__content
+                                .card__img
+                                ul.card__list
+                                    li: .card__header
+                                            h3.card__title Барбер с нуля
+                                            p.card__subtitle  Будние дни
+                                    .card__description
+                                        img(src="./img/calendar.png", alt="")
+                                        .card__group
+                                            p.section__text <span>Длительность:</span></br>от 2 до 5 месяцев
+                                            p.section__text <span>Уровень навыка:</span></br>Без опыта
+                                        p.section__text <span>Формат:</span> обучение в группе(4-6 человек)
+                                        p.section__text Персональные занятия(индивидуальная  программа)
+
+                                    a(href="#").button Подробнее о курсе
+
+                    .card.card--new.animated.fadeIn
+                        img.card__triangle(src="./img/triangle.png" alt="triangle")
+                        .card__outer
+                            .card__content
+                                .card__img
+                                ul.card__list
+                                    li: .card__header
+                                            h3.card__title Барбер с нуля
+                                            p.card__subtitle  Будние дни
+                                    .card__description
+                                        img(src="./img/calendar.png", alt="")
+                                        .card__group
+                                            p.section__text <span>Длительность:</span></br>от 2 до 5 месяцев
+                                            p.section__text <span>Уровень навыка:</span></br>Без опыта
+                                        p.section__text <span>Формат:</span> обучение в группе(4-6 человек)
+                                        p.section__text Персональные занятия(индивидуальная  программа)
+
+                                    a(href="#").button Подробнее о курсе
             
             section.section.team
                 .section__container
