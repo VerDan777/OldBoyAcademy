@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -475,7 +476,8 @@ h1, h2, h3, h4, h5, h6 {
     padding-top: 30px;
     text-align: center; }
   .logo--gold {
-    display: block; }
+    display: block;
+    text-align: center; }
   @media (min-width: 1200px) {
     .logo {
       display: none; } }
@@ -600,9 +602,25 @@ h1, h2, h3, h4, h5, h6 {
     width: 50%;
     display: inline-block;
     vertical-align: top; }
-  .section__right {
-    width: 48%;
-    display: inline-block; }
+    @media (max-width: 340px) {
+      .section__left {
+        width: 100%; } }
+    @media (min-width: 699px) {
+      .section__left {
+        width: 100%;
+        display: block; } }
+    @media (min-width: 1200px) {
+      .section__left {
+        width: 50%;
+        display: inline-block; } }
+  @media (min-width: 699px) {
+    .section__right {
+      width: 100%;
+      display: block; } }
+  @media (min-width: 1200px) {
+    .section__right {
+      width: 48%;
+      display: inline-block; } }
   .section__title {
     text-align: center;
     line-height: 2rem;
@@ -610,15 +628,33 @@ h1, h2, h3, h4, h5, h6 {
     color: black; }
     .section__title--marginboth {
       margin: 40px 0;
-      text-align: left;
+      text-align: center;
       font-size: 2rem;
       line-height: 3rem; }
+      @media (max-width: 340px) {
+        .section__title--marginboth {
+          text-align: center;
+          font-size: 1.1rem;
+          line-height: 1rem; } }
+      @media (min-width: 1200px) {
+        .section__title--marginboth {
+          text-align: left; } }
   .section__text {
     text-align: left;
-    font-family: "Open Sans", sans-serif; }
+    font-family: "Open Sans", sans-serif;
+    color: #444444; }
+    @media (min-width: 699px) {
+      .section__text {
+        text-align: center; } }
+    @media (min-width: 1200px) {
+      .section__text {
+        text-align: left; } }
   .section__container {
     padding: 60px 0;
     text-align: center; }
+    @media (min-width: 1200px) {
+      .section__container--section {
+        padding: 10px 0; } }
 
 .icon {
   text-align: center; }
@@ -633,6 +669,9 @@ h1, h2, h3, h4, h5, h6 {
   height: 40vh;
   max-height: 300px;
   position: relative; }
+  @media (min-width: 1200px) {
+    .courses {
+      max-height: 300px; } }
   .courses::after {
     content: "";
     background-image: url("./img/course.png");
@@ -652,14 +691,97 @@ h1, h2, h3, h4, h5, h6 {
 .card {
   padding: 150px 0;
   padding-bottom: 0;
+  position: relative;
   z-index: 9999;
   animation-duration: 2s;
   animation-delay: 2s;
   animation-iteration-count: 1; }
   @media (min-width: 900px) {
     .card {
-      margin: 0 5%;
-      width: 40%; } }
+      margin: 0 1%;
+      width: 45%;
+      padding-top: 0;
+      padding-bottom: 100px; }
+      .card::before {
+        content: 'Новая программа';
+        color: white;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        font-size: 1.7rem;
+        text-transform: uppercase;
+        position: absolute;
+        position: relative;
+        top: 0px;
+        left: 70px;
+        background-color: #bf0c29;
+        padding: 20px 60px; } }
+  @media (min-width: 1200px) {
+    .card {
+      padding: 50px 0;
+      margin: 0 2%;
+      width: 29%; }
+      .card::before {
+        content: 'Новая программа';
+        color: white;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        position: absolute;
+        position: relative;
+        top: 0px;
+        left: 70px;
+        background-color: #bf0c29;
+        padding: 20px 60px; } }
+    @media (min-width: 1200px) and (min-width: 1200px) {
+      .card::before {
+        content: 'Новая программа';
+        color: white;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        font-size: 1.7rem;
+        text-transform: uppercase;
+        position: absolute;
+        position: relative;
+        top: 0px;
+        left: 70px;
+        background-color: #bf0c29;
+        padding: 20px 60px; } }
+  .card__triangle {
+    position: absolute;
+    top: 410px;
+    left: 20px; }
+    @media (min-width: 1200px) {
+      .card__triangle {
+        position: absolute;
+        top: 421px;
+        left: -15px; } }
+  .card--new {
+    padding: 81px 0; }
+    .card--new::before {
+      content: 'Новая программа';
+      color: white;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 400;
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      position: absolute;
+      top: 350px;
+      left: 20px;
+      background-color: #bf0c29;
+      padding: 20px 40px; }
+    @media (min-width: 1200px) {
+      .card--new::before {
+        content: 'Новая программа';
+        color: white;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        font-size: 1.7rem;
+        text-transform: uppercase;
+        position: absolute;
+        top: 350px;
+        left: -15px;
+        padding: 20px 60px; } }
   @media (min-width: 900px) {
     .card__wrapper {
       display: flex;
@@ -667,26 +789,48 @@ h1, h2, h3, h4, h5, h6 {
       flex-direction: row;
       justify-content: space-between;
       margin-bottom: 100px; } }
+  .card__outer {
+    padding: 18px 18px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
   .card__content {
-    text-align: center;
-    border: 1px solid #c9c9c9;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    padding: 0 10px; }
+    text-align: left;
+    border: 1px solid #d6a354;
+    padding: 12px 12px; }
+    @media (min-width: 699px) {
+      .card__content {
+        text-align: center; } }
+  .card__list {
+    padding: 0;
+    list-style: none; }
+    @media (min-width: 699px) {
+      .card__list {
+        padding: 0; } }
+    @media (min-width: 1200px) {
+      .card__list {
+        padding: 0;
+        padding-left: 20%; } }
   .card__header {
     padding-bottom: 15px;
-    border-bottom: 2px solid #be0725; }
+    border-bottom: 1px solid #d6a354; }
+  .card__group {
+    border-bottom: 1px solid #d6a354; }
   .card__description {
     margin-top: 25px; }
+    @media (min-width: 1200px) {
+      .card__description {
+        margin-top: 0; } }
   .card__title {
     font-size: 2rem;
-    color: #c31f3a; }
+    color: #000000; }
   .card__subtitle {
     margin: 8px 0;
     font-weight: bold; }
   .card span {
-    font-weight: bold; }
+    font-weight: bold;
+    font-size: 1.2rem; }
   .card__img {
-    background-image: url("./img/barber-m.png");
+    background-image: url("./img/barber-sm.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-origin: contain;
@@ -694,26 +838,29 @@ h1, h2, h3, h4, h5, h6 {
     max-height: 100vh; }
     @media (min-width: 699px) {
       .card__img {
-        background-image: url("./img/barber-m.jpg"); } }
+        background-image: url("./img/barber-m.png"); } }
     @media (min-width: 900px) {
       .card__img {
-        background-image: url("./img/barber-l.png"); } }
+        background-image: url("./img/barber-desktop.png"); } }
 
 .team {
   background-color: rgba(70, 49, 18, 0.8);
   height: 40vh;
   max-height: 300px;
   position: relative;
-  margin-top: 4650px; }
+  margin-top: 7150px; }
   @media (max-width: 340px) {
     .team {
-      margin-top: 4850px; } }
+      margin-top: 7250px; } }
   @media (min-width: 699px) {
     .team {
-      margin-top: 4000px; } }
+      margin-top: 6800px; } }
   @media (min-width: 900px) {
     .team {
-      margin-top: 2300px; } }
+      margin-top: 3500px; } }
+  @media (min-width: 1200px) {
+    .team {
+      margin-top: 2200px; } }
   .team::after {
     content: "";
     background-image: url("./img/team.png");
@@ -741,4 +888,4 @@ h1, h2, h3, h4, h5, h6 {
   color: white; }
   @media (max-width: 340px) {
     .button {
-      padding: 30px 54px; } }
+      padding: 30px 38px; } }
